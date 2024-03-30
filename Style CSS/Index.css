@@ -1,0 +1,58 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shrikhand',sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/******Header******/
+.header{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+}
+.header figure{
+    display: flex;
+    justify-content: center;
+
+    height: 30px;
+    width: auto;
+}
+.header img{
+    height: 100%;
+    width: 100%;
+}
+
+.header form{
+    display: flex;
+    justify-content: center;
+
+    height: 30px;
+}
+.header input{
+    border: none;   
+}
+/******Main******/
+
+
+/****Introduction****/
+
+/****Fonctionnement****/
+
+/****Restaurants****/
+
+
+/******Footer******/
+
+
+
