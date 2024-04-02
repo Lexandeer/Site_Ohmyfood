@@ -9,12 +9,16 @@ h1, h2, h3, h4, h5, h6 {
 body{
     margin: 0;
 }
+
 .flex-column{
     display: flex;
     flex-direction: column;
 }
 
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 /******Header******/
 .header{
     display: flex;
@@ -67,7 +71,7 @@ body{
 }
 /******Main******/
 p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /****Introduction****/
@@ -83,7 +87,7 @@ p{
 
 .introduction p{
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 0;
     margin-top: 15px;   
 }
@@ -148,31 +152,160 @@ p{
     box-shadow: 0px 4px 15px 0px #00000026;
 
     height: 70px;
-    width: 90%;
+    width: 340px;
     gap: 7%;
 
 }
 
 .etape p{
     width: 220px;
-    margin-right: 100px;
+    margin-right: 1px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.etape i{
+    color: #7E7E7E;
+    font-size: 20px;
+
+}
+.fa-store::before{
+    color: #9356DC;
+
+}
+
+
+.etape span{
+    position: absolute;
+    right: 344px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    border-radius: 50%;
+    background-color: #9356DC;
+    width: 25px;
+    height: 25px;
+
+    color: white;
+    font-size: 14px;
 }
     
  
 /****Restaurant****/
 
 .restaurant{
+    justify-content: space-between;
     background-color: #F2F2F2;
-
     padding: 50px 20px;
-    
-
+    padding-bottom: 70px;
 }
 
+
+.restaurant article{
+    margin-top: 20px;
+}
 .restaurant h2{
     margin: 0;
 }
+
+.restaurant figure{
+    height:180px;
+    width: 100%;
+}
+
+.contenu{
+    display: flex;
+    background-color: white;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 5px;
+}
+.txt strong{
+    font-size: 18px;
+}
+.txt p{
+    font-size: 17px;
+}
+
+.card figure{
+    margin: 0;
+}
+.card img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.spé{
+    height: 50px;
+    width: 100%;
+}
+
+.card p{
+    margin: 0;
+}
+
 /******Footer******/
 
+footer{
+    background: #353535;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+ 
+    color: white;
+    height: 100%;
+}
 
+footer figure{
+    height: 25px;
+    width: 120px;
+    margin:0;
+    margin-bottom: 15px; 
+    margin-top: 20px;  
+}
 
+footer img{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.logo-footer{
+    color: white;
+}
+
+footer p{
+    margin: 5px;
+    margin-left: 0;
+    font-size: 16px;
+}
+
+.icone-et-lien{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+}
+.icone-et-lien i{
+    font-size: 14px;
+}
+.fa-handshake-angle::before{
+    display: inline-block;
+    width: 18px;
+}
+.fa-utensils::before{
+    display: inline-block;
+    width: 18px;
+}
