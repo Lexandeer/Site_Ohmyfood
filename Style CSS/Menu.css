@@ -1,66 +1,46 @@
+h1{
+    font-family: 'shrikhand', sans-serif;
+}
+
 h2{
     text-transform: uppercase;
 }
 
+
 /******Header******/
 
+header figure{
+    display: flex;
+    justify-content: center;
+}
 
+header img{
+    height: 35px;
+    width: 50%;
+}
 
 /******Main******/
 
-/***Menu***/
+.img-background{  
+    background-image: url(C:/VScode/Site_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);  
+}
 
+.img-menu{
+    background-size: cover; 
+    background-position: center; 
+
+    height: 275px;
+    margin: 0;
+}
+/***Menu***/
+.bouton{
+   
+}
+.bouton-paramettre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0;
+}
 
 /******Footer******/
-
-footer{
-    background: #353535;
-    padding: 20px;
-    padding-top: 15px;
-    padding-bottom: 25px;
- 
-    color: white;
-    height: 100%;
-}
-
-footer figure{
-    height: 25px;
-    width: 120px;
-    margin:0;
-    margin-bottom: 15px; 
-    margin-top: 20px;  
-}
-
-footer img{
-    height: 100%;
-    width: 100%;
-    color: white;
-}
-
-.logo-footer{
-    color: white;
-}
-
-footer p{
-    margin: 5px;
-    margin-left: 0;
-    font-size: 16px;
-}
-
-.icone-et-lien{
-    display: flex;
-    align-items: center;
-    
-    gap: 10px;
-}
-.icone-et-lien i{
-    font-size: 14px;
-}
-.fa-handshake-angle::before{
-    display: inline-block;
-    width: 18px;
-}
-.fa-utensils::before{
-    display: inline-block;
-    width: 18px;
-}
