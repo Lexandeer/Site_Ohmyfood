@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome index.html",
+            "url": "file:///C:/VScode/Site_Ohmyfood/HTML/Index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
