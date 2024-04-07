@@ -219,6 +219,7 @@ p{
 .contenu{
     display: flex;
     background-color: white;
+    position: relative;
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
