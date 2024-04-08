@@ -1,11 +1,51 @@
+body{
+    height: fit-content;
+}
+main{
+    height: fit-content;
+}
+
 h1{
     font-family: 'shrikhand', sans-serif;
+    font-size: 29px;
+    display: inline-block;
+    margin: 15px 0 0 0 ;
 }
 
 h2{
+    display: inline-block;
     text-transform: uppercase;
+    position: relative;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    padding-bottom: 5px;  
+    margin: 0;
+
+    white-space: nowrap;
+    max-width: fit-content;
+}
+h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border: 2px solid #99E2D0;  
+    width: 40px;
 }
 
+span{
+    font-weight: 300;
+}
+
+strong{
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 0;
+}
 
 /******Header******/
 
@@ -15,32 +55,87 @@ header figure{
 }
 
 header img{
+    object-fit: contain;
     height: 35px;
     width: 50%;
 }
 
 /******Main******/
+/***Menu***/
 
 .img-background{  
     background-image: url(C:/VScode/Site_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);  
 }
 
 .img-menu{
+    position: relative;
     background-size: cover; 
     background-position: center; 
 
     height: 275px;
     margin: 0;
+    width: 100%;
 }
-/***Menu***/
-.bouton{
-   
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #F6F6F6;
+    padding : 15px 15px;
+    border-radius: 45px 45px 0 0 ;
+}
+
+
+.description-plats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu article{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px 10px;
+    padding-right: 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+}
+
+.accompagnement-prix{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.prix{
+    position: absolute;
+    right: 15px;
+    font-weight: bold;
+}
+
+
+.bouton-menu{
+    padding: 18px 55px;
 }
 .bouton-paramettre{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin:50px 0;
+    margin-bottom: 40px;
 }
 
 /******Footer******/
+
+footer{
+    display: block;
+}
