@@ -1,10 +1,31 @@
-.fa-heart {
+.heart-icon-label {
+  cursor: pointer;
   position: absolute;
   right: 15px;
   top: 15px;
-  transition: color 0.3s ease;
+  transition: color 4000ms ease;
 }
-.fa-heart:clicked {
+
+.fa-heart {
+  font-weight: 200;
+}
+
+#heartCheckbox-1:checked + .heart-icon-label i {
   font-weight: 900;
-  color: pink;
+  color: #9356DC;
+}
+
+#heartCheckbox-2:checked + .heart-icon-label i {
+  font-weight: 900;
+  color: #9356DC;
+}
+
+#heartCheckbox-3:checked + .heart-icon-label i {
+  font-weight: 900;
+  color: #9356DC;
+}
+
+#heartCheckbox-4:checked + .heart-icon-label i {
+  font-weight: 900;
+  color: #9356DC;
 }/*# sourceMappingURL=Main.css.map */
