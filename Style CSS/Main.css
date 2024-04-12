@@ -27,9 +27,12 @@
 }
 
 .validation {
+  width: 50px;
+  height: 400ms;
   scale: 0;
 }
-.validation:active {
+
+.article:active.validation {
   animation-name: validation-menu;
   animation-delay: 0ms;
   animation-duration: 400ms;
