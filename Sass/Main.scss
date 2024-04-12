@@ -1,9 +1,13 @@
 .heart-icon-label {
     cursor: pointer;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 25px;
+    top: 18px;
     transition: color 4000ms ease;
+    & .fa-heart{
+        transform: scale(1.6);
+        
+    }
 }
 #heartCheckbox-1:checked +.heart-icon-label i{
     font-weight: 900;
