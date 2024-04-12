@@ -6,10 +6,6 @@
   transition: color 4000ms ease;
 }
 
-.fa-heart {
-  font-weight: 200;
-}
-
 #heartCheckbox-1:checked + .heart-icon-label i {
   font-weight: 900;
   color: #9356DC;
@@ -28,4 +24,24 @@
 #heartCheckbox-4:checked + .heart-icon-label i {
   font-weight: 900;
   color: #9356DC;
+}
+
+.validation {
+  scale: 0;
+}
+.validation:active {
+  animation-name: validation-menu;
+  animation-delay: 0ms;
+  animation-duration: 400ms;
+  transform-origin: right;
+  animation-fill-mode: both;
+}
+
+@keyframes validation-menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=Main.css.map */
