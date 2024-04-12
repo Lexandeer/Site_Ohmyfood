@@ -30,16 +30,27 @@ $valid-square-dur:400ms;
 $cd-valid-square:#99E2D0;
 $valid-square-size:50px;
 
+
 .validation{
+    width: $valid-square-size;
+    height: $valid-square-dur;
     scale: 0;
+}
+
+.article{
     &:active{
-        animation-name: validation-menu;
-        animation-delay: 0ms;
-        animation-duration: $valid-square-dur;
-        transform-origin: right;
-        animation-fill-mode: both;
+        &.validation{   
+            animation-name: validation-menu;
+            animation-delay: 0ms;
+            animation-duration: $valid-square-dur;
+            transform-origin: right;
+            animation-fill-mode: both;
+    
+          
+        }
     }
 }
+
 
 @keyframes validation-menu {
     0%{
