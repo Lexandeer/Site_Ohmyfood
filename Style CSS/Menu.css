@@ -56,7 +56,25 @@ article{
 header figure{
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
+
+.lien-icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #353535;
+
+    transform: scale(1.5);
+}
+
 
 header img{
     object-fit: contain;
@@ -81,7 +99,6 @@ header img{
 }
 
 .img-menu{
-    position: relative;
     background-size: cover; 
     background-position: center; 
 
@@ -94,8 +111,7 @@ header img{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    position: absolute;
-    top: 300px;
+    margin-top: -12%;
     z-index: 1;
 
     width: 100%;
@@ -150,5 +166,5 @@ header img{
 /******Footer******/
 
 footer{
-    display: block;
+    height: fit-content;
 }
