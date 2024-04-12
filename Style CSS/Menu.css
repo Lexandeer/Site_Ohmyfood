@@ -47,6 +47,10 @@ strong{
     margin-left: 0;
 }
 
+article{
+    cursor: pointer;
+}
+
 /******Header******/
 
 header figure{
