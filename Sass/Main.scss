@@ -44,9 +44,7 @@ $valid-square-size:50px;
             animation-delay: 0ms;
             animation-duration: $valid-square-dur;
             transform-origin: right;
-            animation-fill-mode: both;
-    
-          
+            animation-fill-mode: both;          
         }
     }
 }
@@ -54,10 +52,10 @@ $valid-square-size:50px;
 
 @keyframes validation-menu {
     0%{
-        transform: scale(0) ;
+        transform: translateX() ;
     }
 
     100%{
-        transform: scale(1);
+        transform: translateX();
     }
 }

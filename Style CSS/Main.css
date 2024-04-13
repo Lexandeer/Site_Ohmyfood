@@ -42,9 +42,9 @@
 
 @keyframes validation-menu {
   0% {
-    transform: scale(0);
+    transform: translateX();
   }
   100% {
-    transform: scale(1);
+    transform: translateX();
   }
 }/*# sourceMappingURL=Main.css.map */
