@@ -137,6 +137,7 @@ p{
     align-items: center;
 
     gap: 20px ;
+    margin-left: 10px;
 }
 
 .fonctionnement article{
@@ -195,7 +196,6 @@ p{
 /****Restaurant****/
 
 .restaurant{
-    justify-content: space-between;
     background-color: #F2F2F2;
     padding: 50px 20px;
     padding-bottom: 70px;
@@ -204,6 +204,7 @@ p{
 
 .restaurant article{
     margin-top: 20px;
+    width: 100%;
 }
 .restaurant h2{
     margin: 0;
@@ -325,4 +326,41 @@ footer p{
 .fa-utensils::before{
     display: inline-block;
     width: 18px;
+}
+
+@media (min-width: 1024px) {
+    .fonctionnement, .restaurant {
+        padding-left:12%;
+        padding-right: 12%;
+    }
+
+/****Fonctionnement****/
+    .fonctionnement{
+        padding-bottom: 60px;
+    }
+    .fonctionnement h2{
+        margin: 0;
+    }
+    .fonctionnement div{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+/****Restaurant****/
+    .restaurant article{
+        width: 100%;
+    }
+    .restaurant h2 {
+   
+    }
+    .menu-global{
+        display: flex;
+        flex-direction: row;
+        gap: ;
+        width: ;
+    }
+    .menux2{
+        display: flex;
+        flex-direction: column;
+    }
 }
