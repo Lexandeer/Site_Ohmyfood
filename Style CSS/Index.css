@@ -10,6 +10,10 @@ body{
     display: flex;
     flex-direction: column;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
 
 a{
     text-decoration: none;
@@ -144,7 +148,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center; 
-   position: relative;
+    position: relative;
     
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -161,12 +165,12 @@ p{
     margin-right: 1px;
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 .etape i{
     color: #7E7E7E;
     font-size: 20px;
-
 }
 .fa-store::before{
     color: #9356DC;
@@ -176,7 +180,7 @@ p{
 
 .etape span{
     position: absolute;
-    right: 308px;
+    left: -0.6875rem;
 
     display: flex;
     justify-content: center;
@@ -226,7 +230,7 @@ p{
 .txt{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 10px;       
     margin-bottom: 15px;
     gap: 5px;
 }
@@ -264,10 +268,6 @@ p{
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-.spé{
-    height: 50px;
-    width: 100%;
 }
 
 .card p{
@@ -328,14 +328,31 @@ footer p{
     width: 18px;
 }
 
+
+
+
+
+
+/******Média Queries******/
+
 @media (min-width: 1024px) {
+
     .fonctionnement, .restaurant {
-        padding-left:12%;
-        padding-right: 12%;
+        padding-left:  4%;
+        padding-right: 4%;
+        padding-bottom: 40px;
+        padding-top: 30px;
     }
+
+/****Introduction****/
+
+.introduction{
+    padding-bottom: 40px;
+}
 
 /****Fonctionnement****/
     .fonctionnement{
+        padding-top: 50px;
         padding-bottom: 60px;
     }
     .fonctionnement h2{
@@ -343,24 +360,73 @@ footer p{
     }
     .fonctionnement div{
         flex-direction: row;
+        justify-content: center;
         gap: 40px;
+    }
+    .etape p {
+        width: initial; 
     }
 
 /****Restaurant****/
     .restaurant article{
         width: 100%;
-    }
-    .restaurant h2 {
-   
+        margin-top: 35px;
     }
     .menu-global{
         display: flex;
         flex-direction: row;
-        gap: ;
-        width: ;
+        justify-content: center;
+        gap: 10%;
     }
     .menux2{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
+
+/******Footer******/
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        height: 60px;
+    }
+
+    .footer-div{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .div{
+        gap: 10px;
+    }
+
+    footer figure{
+        order: 2;
+        margin-left: 90px;
+        margin-right: 50px;
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 1440px) {
+
+    .fonctionnement, .restaurant {
+        padding-left:  10%;
+        padding-right: 10%;
+    }
+
+/****Fonctionnement****/
+    .fonctionnement article{
+        gap: 9%;
+        padding-right: 40px;
+        width: 300px;
+    }
+
+ /****Restaurant****/
+
 }
