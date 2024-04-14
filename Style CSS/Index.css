@@ -371,19 +371,26 @@ footer p{
     .restaurant article{
         width: 100%;
         margin-top: 35px;
+        box-sizing: border-box;  
+    }
+    .restaurant a{
+        width: 50%;
     }
     .menu-global{
+
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         gap: 10%;
     }
     .menux2{
+       
         display: flex;
-        flex-direction: column;
         width: 100%;
         height: 100%;
+        gap: 10%;
     }
+    
 
 /******Footer******/
 
