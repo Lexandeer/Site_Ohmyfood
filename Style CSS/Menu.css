@@ -112,7 +112,6 @@ header img{
     flex-direction: column;
     gap: 40px;
     margin-top: -12%;
-    z-index: 1;
 
     width: 100%;
     box-sizing: border-box;
@@ -167,4 +166,19 @@ header img{
 
 footer{
     height: fit-content;
+}
+
+
+
+
+/******Media-Queries******/
+
+@media (min-width: 1024px) {
+    .menu{
+        margin-top: -3%;
+        back
+    }
+    .img-menu{
+        height: 340px;
+    }
 }
