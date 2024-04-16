@@ -174,9 +174,22 @@ footer{
 /******Media-Queries******/
 
 @media (min-width: 1024px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .menu{
         margin-top: -3%;
-        back
+        background-position: center;
+        width: 70%;
+        padding: 40px 200px;
+    }
+    .menu h1{
+        text-align: center;
+        margin-bottom:10px;
     }
     .img-menu{
         height: 340px;
