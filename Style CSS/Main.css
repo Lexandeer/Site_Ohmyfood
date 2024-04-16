@@ -60,24 +60,31 @@
 
 /***Valid-menu***/
 .validation {
-  width: 50px;
-  height: 400ms;
-  scale: 0;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #99E2D0;
 }
 
-.article:active.validation {
-  animation-name: validation-menu;
+.menu article {
+  overflow: hidden;
+  position: relative;
+}
+.menu article:active .validation {
+  animation-name: validation;
   animation-delay: 0ms;
-  animation-duration: 400ms;
-  transform-origin: right;
-  animation-fill-mode: both;
+  animation-duration: 700ms;
 }
 
-@keyframes validation-menu {
-  0% {
-    transform: translateX();
+@keyframes validation {
+  from {
+    transform: translateX(100%);
+    transform-origin: right;
   }
-  100% {
-    transform: translateX();
+  to {
+    transform: translateX(0);
+    transform-origin: right;
   }
 }/*# sourceMappingURL=Main.css.map */

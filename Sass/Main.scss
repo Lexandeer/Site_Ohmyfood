@@ -64,40 +64,44 @@
 
 }
 
-
-
 /***Valid-menu***/
 
-$valid-square-dur:400ms;
+$valid-square-dur:700ms;
 $cd-valid-square:#99E2D0;
-$valid-square-size:50px;
+$valid-square-size:80px;
 
 
 .validation{
     width: $valid-square-size;
-    height: $valid-square-dur;
-    scale: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $cd-valid-square;
 }
 
-.article{
+.menu article{  
+    overflow: hidden;
+    position: relative;
     &:active{
-        &.validation{   
-            animation-name: validation-menu;
+        & .validation{   
+            animation-name: validation;
             animation-delay: 0ms;
             animation-duration: $valid-square-dur;
-            transform-origin: right;
-            animation-fill-mode: both;          
+                   
         }
     }
 }
 
 
-@keyframes validation-menu {
-    0%{
-        transform: translateX() ;
+@keyframes validation{
+    from {
+        transform: translateX(100%);
+        transform-origin: right;
     }
 
-    100%{
-        transform: translateX();
+    to { 
+        transform: translateX(0);
+        transform-origin: right;
     }
 }
