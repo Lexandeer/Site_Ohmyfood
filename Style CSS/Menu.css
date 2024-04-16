@@ -8,8 +8,9 @@ main{
 h1{
     font-family: 'shrikhand', sans-serif;
     font-size: 29px;
-    display: inline-block;
-    margin: 15px 0 0 0 ;
+    display: inline;
+    margin: 15px 35px 0 0 ;
+    position: relative;
 }
 
 h2{
@@ -107,6 +108,12 @@ header img{
     width: 100%;
 }
 
+.titre-icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
@@ -185,7 +192,7 @@ footer{
         margin-top: -3%;
         background-position: center;
         width: 70%;
-        padding: 40px 200px;
+        padding: 40px 130px;
     }
     .menu h1{
         text-align: center;
@@ -193,5 +200,13 @@ footer{
     }
     .img-menu{
         height: 340px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .menu{
+        padding: 40px 200px;
+        width: 70%;
     }
 }
