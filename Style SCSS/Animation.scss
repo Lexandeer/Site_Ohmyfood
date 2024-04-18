@@ -57,28 +57,21 @@ $valid-square-size:70px;
 .menu article{  
     overflow: hidden;
     position: relative;
-    
-    & .validation{
-        animation: validation none;
-    }
-    & .prix{
-        animation: prix none;
-    }
 
     &:hover{
         & .validation{   
-            animation: validation $valid-square-dur ease-in both;     
+            animation: validation $valid-square-dur ease-in forwards;     
         }
         & .prix{
-            animation: prix $valid-square-dur ease-in both;
+            animation: prix $valid-square-dur ease-in forwards;
         }
     }
     &:not(:hover){    /***Animation inverse lorsque la souris quitte l'Article***/
         & .validation{   
-            animation: validation-reverse $valid-square-dur 200ms ease-in both alternate;     
+            animation: validation-reverse $valid-square-dur 200ms ease-in backwards;     
         }
         & .prix{
-            animation: prix-reverse $valid-square-dur 200ms ease-in both alternate;
+            animation: prix-reverse $valid-square-dur 200ms ease-in backwards;
         }
     }
 }

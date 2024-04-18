@@ -96,24 +96,18 @@
   overflow: hidden;
   position: relative;
 }
-.menu article .validation {
-  animation: validation none;
-}
-.menu article .prix {
-  animation: prix none;
-}
 .menu article:hover .validation {
-  animation: validation 250ms ease-in both;
+  animation: validation 250ms ease-in forwards;
 }
 .menu article:hover .prix {
-  animation: prix 250ms ease-in both;
+  animation: prix 250ms ease-in forwards;
 }
 .menu article:not(:hover) { /***Animation inverse lorsque la souris quitte l'Article***/ }
 .menu article:not(:hover) .validation {
-  animation: validation-reverse 250ms 200ms ease-in both alternate;
+  animation: validation-reverse 250ms 200ms ease-in backwards;
 }
 .menu article:not(:hover) .prix {
-  animation: prix-reverse 250ms 200ms ease-in both alternate;
+  animation: prix-reverse 250ms 200ms ease-in backwards;
 }
 
 @keyframes validation {

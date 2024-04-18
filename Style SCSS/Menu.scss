@@ -147,8 +147,6 @@ header img{
     gap: 15px;
 }
 
-
-
 .accompagnement-prix{
     display: flex;
     flex-direction: row;
@@ -156,6 +154,10 @@ header img{
 }
 
 .accompagnement{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
