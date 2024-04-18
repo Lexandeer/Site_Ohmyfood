@@ -1,0 +1,158 @@
+/*Index*/
+.heart-icon-label {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}
+.heart-icon-label .fa-heart {
+  transform: scale(1.6);
+}
+
+/*Menu*/
+.heart-icon-label-menu {
+  cursor: pointer;
+}
+.heart-icon-label-menu .fa-heart {
+  transform: scale(1.6);
+}
+
+/***Heart***/
+#heartCheckbox-1:checked + .heart-icon-label-menu i, #heartCheckbox-1:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-2:checked + .heart-icon-label-menu i, #heartCheckbox-2:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-3:checked + .heart-icon-label-menu i, #heartCheckbox-3:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-4:checked + .heart-icon-label-menu i, #heartCheckbox-4:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-5:checked + .heart-icon-label-menu i, #heartCheckbox-5:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-6:checked + .heart-icon-label-menu i, #heartCheckbox-6:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-7:checked + .heart-icon-label-menu i, #heartCheckbox-7:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#heartCheckbox-8:checked + .heart-icon-label-menu i, #heartCheckbox-8:checked + .heart-icon-label i {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/***Valid-menu***/
+.validation {
+  display: flex;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  background-color: #99E2D0;
+}
+.validation i {
+  position: absolute;
+  transform: scale(1.3);
+  right: 45%;
+  top: 37%;
+  color: white;
+}
+
+.menu article {
+  overflow: hidden;
+  position: relative;
+}
+.menu article .validation {
+  animation: validation none;
+}
+.menu article .prix {
+  animation: prix none;
+}
+.menu article:hover .validation {
+  animation: validation 250ms ease-in both;
+}
+.menu article:hover .prix {
+  animation: prix 250ms ease-in both;
+}
+.menu article:not(:hover) { /***Animation inverse lorsque la souris quitte l'Article***/ }
+.menu article:not(:hover) .validation {
+  animation: validation-reverse 250ms 200ms ease-in both alternate;
+}
+.menu article:not(:hover) .prix {
+  animation: prix-reverse 250ms 200ms ease-in both alternate;
+}
+
+@keyframes validation {
+  from {
+    transform: translateX(0);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(-100%);
+    transform-origin: right;
+  }
+}
+@keyframes validation-reverse {
+  from {
+    transform: translateX(-100%);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(0);
+    transform-origin: right;
+  }
+}
+@keyframes prix {
+  from {
+    transform: translateX(0);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(-210%);
+    transform-origin: right;
+  }
+}
+@keyframes prix-reverse {
+  from {
+    transform: translateX(-210%);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(0);
+    transform-origin: right;
+  }
+}/*# sourceMappingURL=Animation.css.map */

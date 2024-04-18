@@ -1,0 +1,220 @@
+body{
+    height: fit-content;
+}
+main{
+    height: fit-content;
+}
+
+h1{
+    font-family: 'shrikhand', sans-serif;
+    font-size: 29px;
+    display: inline;
+    margin: 15px 35px 0 0 ;
+    position: relative;
+}
+
+h2{
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    padding-bottom: 5px;  
+    margin: 0;
+
+    white-space: nowrap;
+    max-width: fit-content;
+}
+h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border: 2px solid #99E2D0;  
+    width: 40px;
+}
+
+span{
+    font-weight: 300;
+}
+
+strong{
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 0;
+}
+
+article{
+    cursor: pointer;
+}
+
+/******Header******/
+
+header figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.lien-icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #353535;
+
+    transform: scale(1.5);
+}
+
+
+header img{
+    object-fit: contain;
+    height: 35px;
+    width: 50%;
+}
+
+/******Main******/
+/***Menu***/
+
+.img-background-1{  
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);  
+}
+.img-background-2{  
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);  
+}
+.img-background-3{  
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);  
+}
+.img-background-4{  
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);  
+}
+
+.img-menu{
+    background-size: cover; 
+    background-position: center; 
+
+    height: 275px;
+    margin: 0;
+    width: 100%;
+}
+
+.titre-icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: -12%;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #F6F6F6;
+    padding : 15px 15px;
+    border-radius: 45px 45px 0 0 ;
+
+    & article{
+        display: flex;
+        flex-direction: column;
+        
+        padding: 10px 10px;
+        padding-right: 0;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+    }
+}
+
+
+.description-plats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+.accompagnement-prix{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.accompagnement{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prix{
+    position: absolute;
+    right: 15px;
+    font-weight: bold;
+}
+
+
+.bouton-menu{
+    padding: 18px 55px;
+}
+.bouton-paramettre{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/******Footer******/
+
+footer{
+    height: fit-content;
+}
+
+
+
+
+/******Media-Queries******/
+
+@media (min-width: 1024px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        margin-top: -3%;
+        background-position: center;
+        width: 70%;
+        padding: 40px 130px;
+    }
+    .menu h1{
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .img-menu{
+        height: 340px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .menu{
+        padding: 40px 200px;
+        width: 70%;
+    }
+}
