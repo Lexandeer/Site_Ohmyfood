@@ -1,29 +1,93 @@
-/*Index*/
-.heart-icon-label {
-    cursor: pointer;
-    position: absolute;
-    right: 25px;
-    top: 18px;
-    & .fa-heart{
-        transform: scale(1.6);
-        
-    }
-}
-/*Menu*/
-.heart-icon-label-menu {
-    cursor: pointer;
-    & .fa-heart{
-        transform: scale(1.6);       
+/***Heart***/
+
+$cd-heart: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+.heart-icon-label-menu{
+    position: relative;
+
+    & .fa-regular.fa-heart, .fa-solid.fa-heart {      
+        top: 2px;
+        left: 0;       
     }
 }
 
-/***Heart***/
-@for $i from 1 through 8 {
-    #heartCheckbox-#{$i}:checked + .heart-icon-label-menu i ,#heartCheckbox-#{$i}:checked + .heart-icon-label i{
-        font-weight: 900;
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+.heart-icon-label{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+ }
+
+
+.heart-icon-label-menu,
+.heart-icon-label {
+    cursor: pointer;   
+    width: 24px;
+    height: 24px;
+
+    & .fa-regular.fa-heart, .fa-solid.fa-heart{
+        position: absolute;
+        font-size: 24px; 
+    }
+
+    & .fa-regular.fa-heart {
+        z-index: 1;         // Cœur vide reste au-dessus initialement
+        opacity: 1;
+    }
+
+    & .fa-solid.fa-heart {
+        z-index: 0;         // Cœur plein est initialement en dessous
+        opacity: 0;         // Le cœur plein est initialement invisible
+        background: $cd-heart;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+/***Boucle Pour les pages menus***/
+@for $i from 1 through 8 {
+    #heartCheckbox-#{$i}:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+        opacity: 1;         // S'assurer que l'opacité devient 1 lorsque coché
+        animation: fadeInHeart  900ms forwards ease-in;         // Appliquer l'animation
+        z-index: 2;         // Assurez-vous que le cœur plein passe au-dessus
+    }
+
+
+    #heartCheckbox-#{$i}:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+        opacity: 0;         // Rendre le cœur vide invisible
+        z-index: 0;         // Garde en dessous
+    }
+}
+
+/***Boucle Pour la page principale***/
+@for $i from 1 through 8 {
+    #heartCheckbox-#{$i}:checked ~ .heart-icon-label .fa-solid.fa-heart {
+        animation: fadeInHeart  900ms forwards ease-in;         // Appliquer l'animation
+        z-index: 2;         // Assurez-vous que le cœur plein passe au-dessus
+    }
+
+
+    #heartCheckbox-#{$i}:checked ~ .heart-icon-label .fa-regular.fa-heart {
+        opacity: 0;         // Rendre le cœur vide invisible
+        z-index: 0;         // Garde en dessous
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInHeart {
+    0% {
+        opacity: (0.4);
+        transform: scale(0.2)
+    }
+
+    50%{
+        opacity: (0.6);
+    }
+
+    100% {
+        opacity: (1);
+        transform: scale(1);
     }
 }
 
@@ -66,7 +130,7 @@ $valid-square-size:70px;
             animation: prix $valid-square-dur ease-in forwards;
         }
     }
-    &:not(:hover){    /***Animation inverse lorsque la souris quitte l'Article***/
+    &:not(:hover){          // Animation inverse lorsque la souris quitte l'Article
         & .validation{   
             animation: validation-reverse $valid-square-dur 200ms ease-in backwards;     
         }
@@ -75,6 +139,8 @@ $valid-square-size:70px;
         }
     }
 }
+
+/* Animation Keyframes */
 
 @keyframes validation{
     from {

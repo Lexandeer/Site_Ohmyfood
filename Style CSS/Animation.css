@@ -1,79 +1,228 @@
-/*Index*/
+/***Heart***/
+.heart-icon-label-menu {
+  position: relative;
+}
+.heart-icon-label-menu .fa-regular.fa-heart, .heart-icon-label-menu .fa-solid.fa-heart {
+  top: 2px;
+  left: 0;
+}
+
+.heart-icon-label {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.heart-icon-label-menu,
 .heart-icon-label {
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.heart-icon-label-menu .fa-regular.fa-heart, .heart-icon-label-menu .fa-solid.fa-heart,
+.heart-icon-label .fa-regular.fa-heart,
+.heart-icon-label .fa-solid.fa-heart {
   position: absolute;
-  right: 25px;
-  top: 18px;
+  font-size: 24px;
 }
-.heart-icon-label .fa-heart {
-  transform: scale(1.6);
+.heart-icon-label-menu .fa-regular.fa-heart,
+.heart-icon-label .fa-regular.fa-heart {
+  z-index: 1;
+  opacity: 1;
 }
-
-/*Menu*/
-.heart-icon-label-menu {
-  cursor: pointer;
-}
-.heart-icon-label-menu .fa-heart {
-  transform: scale(1.6);
-}
-
-/***Heart***/
-#heartCheckbox-1:checked + .heart-icon-label-menu i, #heartCheckbox-1:checked + .heart-icon-label i {
-  font-weight: 900;
+.heart-icon-label-menu .fa-solid.fa-heart,
+.heart-icon-label .fa-solid.fa-heart {
+  z-index: 0;
+  opacity: 0;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#heartCheckbox-2:checked + .heart-icon-label-menu i, #heartCheckbox-2:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/***Boucle Pour les pages menus***/
+#heartCheckbox-1:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
 }
 
-#heartCheckbox-3:checked + .heart-icon-label-menu i, #heartCheckbox-3:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#heartCheckbox-1:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
 }
 
-#heartCheckbox-4:checked + .heart-icon-label-menu i, #heartCheckbox-4:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#heartCheckbox-2:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
 }
 
-#heartCheckbox-5:checked + .heart-icon-label-menu i, #heartCheckbox-5:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#heartCheckbox-2:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
 }
 
-#heartCheckbox-6:checked + .heart-icon-label-menu i, #heartCheckbox-6:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#heartCheckbox-3:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
 }
 
-#heartCheckbox-7:checked + .heart-icon-label-menu i, #heartCheckbox-7:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#heartCheckbox-3:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
 }
 
-#heartCheckbox-8:checked + .heart-icon-label-menu i, #heartCheckbox-8:checked + .heart-icon-label i {
-  font-weight: 900;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#heartCheckbox-4:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
 }
 
+#heartCheckbox-4:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-5:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-5:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-6:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-6:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-7:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-7:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-8:checked ~ .heart-icon-label-menu .fa-solid.fa-heart {
+  opacity: 1;
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-8:checked ~ .heart-icon-label-menu .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+/***Boucle Pour la page principale***/
+#heartCheckbox-1:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-1:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-2:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-2:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-3:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-3:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-4:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-4:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-5:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-5:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-6:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-6:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-7:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-7:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+#heartCheckbox-8:checked ~ .heart-icon-label .fa-solid.fa-heart {
+  animation: fadeInHeart 900ms forwards ease-in;
+  z-index: 2;
+}
+
+#heartCheckbox-8:checked ~ .heart-icon-label .fa-regular.fa-heart {
+  opacity: 0;
+  z-index: 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInHeart {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.2);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /***Valid-menu***/
 .validation {
   display: flex;
@@ -102,7 +251,6 @@
 .menu article:hover .prix {
   animation: prix 250ms ease-in forwards;
 }
-.menu article:not(:hover) { /***Animation inverse lorsque la souris quitte l'Article***/ }
 .menu article:not(:hover) .validation {
   animation: validation-reverse 250ms 200ms ease-in backwards;
 }
@@ -110,6 +258,7 @@
   animation: prix-reverse 250ms 200ms ease-in backwards;
 }
 
+/* Animation Keyframes */
 @keyframes validation {
   from {
     transform: translateX(0);
