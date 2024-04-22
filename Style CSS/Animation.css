@@ -247,22 +247,18 @@
 }
 .menu article:hover .validation {
   animation: validation 250ms ease-in forwards;
-  animation-play-state: running;
 }
 .menu article:hover .prix {
   animation: prix 250ms ease-in forwards;
-  animation-play-state: running;
 }
 .menu article:hover .accompagnement, .menu article:hover .plat {
   transition: width 250ms ease-in;
   width: 60%;
 }
 .menu article:not(:hover) .validation {
-  animation-play-state: paused;
   animation: validation-reverse 250ms 200ms ease-in backwards;
 }
 .menu article:not(:hover) .prix {
-  animation-play-state: paused;
   animation: prix-reverse 250ms 200ms ease-in backwards;
 }
 .menu article:not(:hover) .accompagnement, .menu article:not(:hover) .plat {
@@ -310,4 +306,32 @@
     transform: translateX(0);
     transform-origin: right;
   }
-}/*# sourceMappingURL=Animation.css.map */
+}
+/***Apparition-plats***/
+.entrees, .titre-icone {
+  animation: apparition-plats 1s 300ms ease-out both;
+}
+
+.plats {
+  animation: apparition-plats 1s 800ms ease-out both;
+}
+
+.desserts, .bouton-menu {
+  animation: apparition-plats 1s 1000ms ease-out both;
+}
+
+/* Animation Keyframes */
+@keyframes apparition-plats {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/***loader***//*# sourceMappingURL=Animation.css.map */

@@ -116,10 +116,6 @@ $valid-square-size:70px;
     }
 }
 
-.validation, .prix {
-
-}
-
 .menu article{  
     overflow: hidden;
     position: relative;
@@ -128,11 +124,9 @@ $valid-square-size:70px;
     &:hover{
         & .validation {   
             animation: validation $valid-square-dur ease-in forwards;
-            animation-play-state: running;     
         }
         & .prix { 
             animation: prix $valid-square-dur ease-in forwards;
-            animation-play-state: running;
         }
         & .accompagnement, .plat {
             transition: width $valid-square-dur ease-in ; 
@@ -142,11 +136,10 @@ $valid-square-size:70px;
     }
     &:not(:hover){          // Animation inverse lorsque la souris quitte l'Article
         & .validation {   
-            animation-play-state: paused;
+
             animation: validation-reverse $valid-square-dur 200ms ease-in backwards;     
         }
-        & .prix {
-            animation-play-state: paused;
+        & .prix {      
             animation: prix-reverse $valid-square-dur 200ms ease-in backwards;
         }
         & .accompagnement, .plat { 
@@ -204,3 +197,38 @@ $valid-square-size:70px;
         transform-origin: right;
     }
 }
+
+
+/***Apparition-plats***/
+
+.entrees, .titre-icone {
+    animation: apparition-plats 1s 300ms ease-out both;
+}
+.plats {
+    animation: apparition-plats 1s 800ms ease-out both;
+}
+.desserts, .bouton-menu {
+    animation: apparition-plats 1s 1000ms ease-out both;
+}
+
+/* Animation Keyframes */
+
+@keyframes apparition-plats{
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/***loader***/
+
