@@ -247,15 +247,27 @@
 }
 .menu article:hover .validation {
   animation: validation 250ms ease-in forwards;
+  animation-play-state: running;
 }
 .menu article:hover .prix {
   animation: prix 250ms ease-in forwards;
+  animation-play-state: running;
+}
+.menu article:hover .accompagnement, .menu article:hover .plat {
+  transition: width 250ms ease-in;
+  width: 60%;
 }
 .menu article:not(:hover) .validation {
+  animation-play-state: paused;
   animation: validation-reverse 250ms 200ms ease-in backwards;
 }
 .menu article:not(:hover) .prix {
+  animation-play-state: paused;
   animation: prix-reverse 250ms 200ms ease-in backwards;
+}
+.menu article:not(:hover) .accompagnement, .menu article:not(:hover) .plat {
+  transition: width 250ms 200ms ease-in;
+  width: 100%;
 }
 
 /* Animation Keyframes */

@@ -116,26 +116,42 @@ $valid-square-size:70px;
     }
 }
 
+.validation, .prix {
 
+}
 
 .menu article{  
     overflow: hidden;
     position: relative;
 
+
     &:hover{
-        & .validation{   
-            animation: validation $valid-square-dur ease-in forwards;     
+        & .validation {   
+            animation: validation $valid-square-dur ease-in forwards;
+            animation-play-state: running;     
         }
-        & .prix{
+        & .prix { 
             animation: prix $valid-square-dur ease-in forwards;
+            animation-play-state: running;
         }
+        & .accompagnement, .plat {
+            transition: width $valid-square-dur ease-in ; 
+            width: 60%;
+        }
+      
     }
     &:not(:hover){          // Animation inverse lorsque la souris quitte l'Article
-        & .validation{   
+        & .validation {   
+            animation-play-state: paused;
             animation: validation-reverse $valid-square-dur 200ms ease-in backwards;     
         }
-        & .prix{
+        & .prix {
+            animation-play-state: paused;
             animation: prix-reverse $valid-square-dur 200ms ease-in backwards;
+        }
+        & .accompagnement, .plat { 
+            transition: width $valid-square-dur 200ms ease-in ;  
+            width: 100%; 
         }
     }
 }
@@ -163,6 +179,7 @@ $valid-square-size:70px;
         transform-origin: right;
     }
 }
+
 
 
 @keyframes prix{
