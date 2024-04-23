@@ -360,12 +360,12 @@ footer p {
     margin-right: 50px;
     margin-bottom: 5px;
   }
-  .footer-div {
+  footer .footer-div {
     display: flex;
     flex-direction: row;
     gap: 40px;
   }
-  .div {
+  footer .div {
     flex-direction: row;
     gap: 10px;
   }

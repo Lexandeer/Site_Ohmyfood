@@ -426,18 +426,22 @@ footer{
             margin-right: 50px;
             margin-bottom: 5px;
         }
+
+        & .footer-div{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        & .div{
+            flex-direction: row;
+            gap: 10px;
+        }
     }
 
-    .footer-div{
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
+    
 
-    .div{
-        flex-direction: row;
-        gap: 10px;
-    }
+    
 
     
 }
