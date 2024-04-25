@@ -2,9 +2,10 @@
     <meta charset="UTF-8">
     <title>La palette du goût</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style CSS/Index.css">
-    <link rel="stylesheet" href="../Style CSS/Animation.css">
-    <link rel="stylesheet" href="../Style CSS/Menu.css">
+    <link rel="stylesheet" href="Style CSS/Index.css">
+    <link rel="stylesheet" href="Style CSS/Animation.css">
+    <link rel="stylesheet" href="Style CSS/Animation-checkboxes.css">
+    <link rel="stylesheet" href="Style CSS/Menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -18,17 +19,17 @@
     <header>
         <a href="index.html" class="lien-icone"><i class="fa-solid fa-arrow-left"></i></a>
         <figure>
-            <img src="../images/logo/ohmyfood@2x.svg" alt="Image du logo">
+            <img src="images/logo/ohmyfood@2x.svg" alt="Image du logo">
         </figure>
     </header>
     <main>
-        <figure class="img-background-4 img-menu">
+        <figure class="img-background-2 img-menu">
         </figure>
         <section class="menu">
             <div class="titre-icone">
-                <h1>La palette du goût</h1>
-                <input type="checkbox" id="heartCheckbox-8" style="display: none;"/>
-                <label for="heartCheckbox-8" class="heart-icon-label-menu">
+                <h1>La note enchantée</h1>
+                <input type="checkbox" id="heartCheckbox-6" style="display: none;"/>
+                <label for="heartCheckbox-6" class="heart-icon-label-menu">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-heart"></i>
                 </label>
@@ -36,9 +37,9 @@
             <div class="entrees">
                 <h2>entrées</h2>
                 <article class="article">
-                    <strong class="plat">Tartarre de poulpe acidulé</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Au zeste d'orange</p>
+                    <strong class="plat">Tartare de thon</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Assaisonné au yuzu</p>
                         <span class="prix">25€</span>
                     </div>
                     <div class="validation">
@@ -46,9 +47,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <strong class="plat">Velouté de légumes d'antan</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Carotte,panais,topinambour</p>
+                    <strong class="plat">Bouchée de homard croustillant </strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Et sa farandole de petits légumes</p>
                         <span class="prix">35€</span>
                     </div>
                     <div class="validation">
@@ -56,10 +57,10 @@
                     </div>
                 </article>
                 <article class="article">
-                    <strong class="plat">Soupe à l'oignon</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Revisitée</p>
-                        <span class="prix">20€</span>
+                    <strong class="plat">Poulet rôti aux herbes de Provence</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Et sa crème de truffe</p>
+                        <span class="prix">40€</span>
                     </div>
                     <div class="validation">
                         <i class="fa-solid fa-circle-check"></i>
@@ -69,9 +70,9 @@
             <div class="plats">
                 <h2>plats</h2>
                 <article class="article">
-                    <strong class="plat">Coquilles Saint-Jacques</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Accompagnées d'une purée de panais</p>
+                    <strong class="plat">Poulet rôti aux herbes de Provence</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Et sa crème de truffe</p>
                         <span class="prix">40€</span>
                     </div>
                     <div class="validation">
@@ -79,9 +80,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <strong class="plat">Magret de canard</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Et parmentier de pomme de terre</p>
+                    <strong class="plat">Langouste rôtie</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Et ses légumes de saison</p>
                         <span class="prix">35€</span>
                     </div>
                     <div class="validation">
@@ -89,9 +90,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <strong class="plat">Pigeonneau d'Ille-Et-Vilaine</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Sur son lit de gnocchis aux légumes</p>
+                    <strong class="plat">Côte de boeuf Angus</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Et sa purée de panais</p>
                         <span class="prix">44€</span>
                     </div>
                     <div class="validation">
@@ -99,12 +100,12 @@
                     </div>
                 </article>
             </div>
-            <div class="desserts"> 
+            <div class="desserts">
                 <h2>Desserts</h2>
                 <article class="article">
-                    <strong class="plat">Pétales de violette glacés</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Et la purée de noisettes</p>
+                    <strong class="plat">Farandole de desserts</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Du chef</p>
                         <span class="prix">18€</span>
                     </div>
                     <div class="validation">
@@ -112,9 +113,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <strong class="plat">Fodant aux chocolat</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Revisité</p>
+                    <strong class="plat">Crème brulée</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">Revisitée</p>
                         <span class="prix">22€</span>
                     </div>
                     <div class="validation">
@@ -122,9 +123,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <strong class="plat">Millefeuille croustillant</strong>
-                    <div class="accompagnement-prix"> 
-                        <p class="accompagnement">Myrthilles et pâte d'amande</p>
+                    <strong class="plat">Tiramisu</strong>
+                    <div class="accompagnement-prix">
+                        <p class="accompagnement">A la noisette</p>
                         <span class="prix">23€</span>
                     </div>
                     <div class="validation">
@@ -139,7 +140,7 @@
     </main>
     <footer>
         <figure>
-            <img class="logo-footer" src="../images/logo/ohmyfood-white@2x.svg" alt="Logo Ohmyfood">
+            <img class="logo-footer" src="images/logo/ohmyfood-white@2x.svg" alt="Logo Ohmyfood">
         </figure>
         <div class="flex-column footer-div">
             <div class="flex-column div">
