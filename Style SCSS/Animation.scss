@@ -122,7 +122,7 @@ $valid-square-size:70px;
     position: relative;
 
 
-    &:hover{
+    &:hover{            // l'Animation se déclanche lorsque la souris se pose sur l'article
         & .validation {   
             animation: validation $valid-square-dur ease-in forwards;
         }
