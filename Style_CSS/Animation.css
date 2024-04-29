@@ -1,17 +1,21 @@
 /***colors***/
 /***Heart***/
-.heart-icon-label-menu {
+.card-container {
   position: relative;
 }
+.card-container .heart-icon-label,
+.card-container .heart-icon-label-menu {
+  position: absolute;
+}
+
 .heart-icon-label-menu .fa-regular.fa-heart, .heart-icon-label-menu .fa-solid.fa-heart {
-  top: 2px;
-  left: 0;
+  top: 23px;
+  right: 160px;
 }
 
 .heart-icon-label {
-  position: absolute;
   right: 20px;
-  top: 20px;
+  bottom: 20px;
 }
 
 .heart-icon-label-menu,
